@@ -22,7 +22,7 @@ pipeline {
                 #conda activate mlip
 
                 # TODO Complete the command to run pytest
-                sudo /home/team25/miniconda3/condabin/conda run -n mlip pytest
+                sudo /home/team25/miniconda3/condabin/conda run -n jiuyuanx pytest
 
                 echo 'pytest runned'
                 exit 1 #comment this line after implementing Jenkinsfile
