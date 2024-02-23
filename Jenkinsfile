@@ -8,7 +8,7 @@ pipeline {
                 echo 'In C or Java, we can compile our program in this step'
                 echo 'In Python, we can build our package here or skip this step'
                 '''
-                sudo ~/miniconda3/bin/conda init
+                sudo /home/team25/miniconda3/condabin/conda init
                 conda activate mlip
                 
             }
@@ -20,12 +20,12 @@ pipeline {
 
                 # TODO fill out the path to conda here
                 # sudo /PATH/TO/CONDA init
-                sudo ~/miniconda3/bin/conda init
-                conda activate mlip
+                #sudo ~/miniconda3/bin/conda init
+                #conda activate mlip
 
                 # TODO Complete the command to run pytest
                 # sudo /PATH/TO/CONDA run -n <Envinronment Name> <Command you want to run>
-                sudo ~/miniconda3/bin/conda run -n mlip python3 test_utility.py
+                sudo /home/team25/miniconda3/condabin/conda run -n mlip python3 test_utility.py
 
                 echo 'pytest runned'
                 exit 1 #comment this line after implementing Jenkinsfile
